@@ -1,1 +1,5 @@
-
+print("THIS CODE IS WRITTEN IN PYCHARM  ")
+X=10
+Y=6575
+Z=X+Y
+print(Z)
