@@ -1,12 +1,16 @@
 #6. WAP to check whether a number is prime or not.
-num=int(input('Enter a number :'))
-if num > 1:
-    for i in range(2,num):
-      if num % i == 0:
-        print(num,'is not a prime number')
+while True:
+    num = int(input('Enter a number :'))
+    if num == -1:# to break loop
         break
-      else:
-        print(num,'is a prime number')
-        break
-else:
-    print(num,'is not a prime number')
+    flag = True
+    if num == 1 or num == 0:
+        flag = False
+    elif num > 1:
+        for i in range(2, (num+2)//2):
+            if num % i == 0:
+                flag = False
+    if flag:
+        print(num, 'is a prime number')
+    else:
+        print(num, 'is not a prime number')
