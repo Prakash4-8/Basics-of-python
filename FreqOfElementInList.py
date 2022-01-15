@@ -7,14 +7,18 @@
 # 2                   3
 # 1                   1
 # 9                   2
-list1 = [1, 23, 65, 54, 75, 64, 25, 46, 15, 66, 45, 16, 48, 62, 15, 65, 15]
-frequency = dict()
-visit = set()
+list1 = [1, 23, 65, 54, 75, 64, 25, 46, 15, 66, 45, 1, 48, 62, 15, 65, 15]
+unique = []
 for i in list1:
-    if i in visit:
-        frequency[i] = frequency[i]+1
-    else:
-        frequency[i] = 1
-        visit.add(i)
-print(list1)
-print(frequency)
+    if i not in unique:
+
+        unique.append(i)
+print('Element Value')
+for i in unique:
+    count = 0
+    for j in list1:
+        if j == i:
+            count+=1
+    print('{}\t\t{}'.format(i,count))
+
+
