@@ -1,5 +1,5 @@
 # Quick Sort
-list1 = [2, 8, 7, 1, 3, 5, 6, 4, 45, 79,0]
+list1 = [8, 7, 64, 5, 4, 3]
 
 def quickSort(list1, low, high):
     if low < high:
